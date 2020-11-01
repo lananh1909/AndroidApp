@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff3333">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_dehaze_24"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="#FF3333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INBOX"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/button"
+            android:layout_margin="10dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF3333"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/email_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
